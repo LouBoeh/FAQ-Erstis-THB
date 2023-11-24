@@ -4,7 +4,7 @@ function toggleAccordion(button) {
     button.children[1].classList.toggle('rotate');
 }
 // 使用 fetch 发送请求到后端
-fetch('http://localhost:8080/')
+fetch('http://34.79.116.218:8080/')
     .then(response => response.json())
     .then(data => {
         // 使用返回的数据来创建手风琴项
