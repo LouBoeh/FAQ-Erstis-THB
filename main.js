@@ -3,6 +3,8 @@ const app = express();
 const answersApp = require('./answers');
 const answeredQuestionsApp = require('./answered_questions');
 
+app.use(express.static('public'));
+
 // Use the answers route handler at a specific URL
 app.use('/answer', answersApp.app);
 
